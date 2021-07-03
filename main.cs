@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 
 class MainClass {
   public static void Main (string[] args) {
@@ -30,6 +31,29 @@ class MainClass {
   {
     Console.WriteLine(salary[pos]);
   }
+
+  Console.WriteLine("Sort");
+  Array.Sort(salary);
+   for(int pos=0; pos <= len-1; pos++)
+  {
+    Console.WriteLine(salary[pos]);
+  }
+
+  Console.WriteLine("Reverse");
+  Array.Reverse(salary);
+   for(int pos=0; pos <= len-1; pos++)
+  {
+    Console.WriteLine(salary[pos]);
+  }
+
+  int min = salary.Min();
+  Console.WriteLine("Min value = " + min);
+
+  int max = salary.Max();
+  Console.WriteLine("Max value = " + max);
+
+  int sum = salary.Sum();
+  Console.WriteLine("Sum = " + sum);
 
   }
 }
